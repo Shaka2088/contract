@@ -1,17 +1,10 @@
-# Custom Logic Upkeep Interactions
+# Dynamic NFTs
+This repo will support the [Creating Dynamic NFTs](https://www.youtube.com/watch?v=E7Rm1LUKhj4) tutorial.  
 
-### UpkeepInteractions.sol
+## How to Use The Repo
 
-A solidity contract showcasing the interaction with `AutomationRegistrar` and `KeeperRegistry` contracts, for **registration** of **Custom Logic Upkeep** and performing other operations like **pause upkeep**, **unpause upkeep**, **cancel upkeep**, **add funds to upkeep**, **withdraw funds from upkeep**, and **edit gas limit of upkeep**.
+This repo consists of two files:
+- **1_starter.sol**: This is the starter file with the basic OpenZeppelin contract plus helper functions
+- **2_complete.sol**: the final contract for use with keepers
 
-**Note:** The upkeep that will be registered using the contract won't be visible in the [Automation UI](https://automation.chain.link/) because the `adminAddress` is being set to the address of the contract (not to any wallet).
-
-###  upkeepInteractions.js
-
-A script in JS containing the functions to interact with the registered **Custom Logic Upkeep**.
-
-Run the script using this command:
-
-```js
-node upkeepInteractions.js ${KEEPER_REGISTRY_ADDRESS} ${LINK_TOKEN_ADDRESS}
-```
+Both versions of the contracts can be deployed as is via a tool like [Remix](https://remix.ethereum.org/).
